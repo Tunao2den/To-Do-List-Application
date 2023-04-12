@@ -17,5 +17,6 @@ If you want to check app version and developer just click the info button.
 
 ![interface2](https://github.com/Tunao2den/To-Do-List-Application/blob/main/todo%20list%20interface%202.png?raw=true)
 
-## Lisance
+
+## License 
 [MIT](https://choosealicense.com/licenses/mit/)

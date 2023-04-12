@@ -7,8 +7,9 @@ from tkinter import messagebox
 do_list = []
 def add(todo_text):
     if(todo_text == ""):
-        print("please enter text")
+        typetask_label.config(text="Please enter text", font="calibri 20 bold")
     else:
+        typetask_label.config(text="Type a task!", font="calibri 20 bold")
         do_list.append(todo_text)
         entry_box.delete(0, END)
         for i in range(len(do_list)):
@@ -17,12 +18,13 @@ def add(todo_text):
 
 def done():
     if list_box.curselection():
+        todo_label.config(text="To Do List", font="calibri 20 bold")
         current_task = list_box.get(ANCHOR)
         if current_task in do_list:
             do_list.remove(current_task)
             list_box.delete(ANCHOR)
     else:
-        return print("Select a Task")   
+        return todo_label.config(text="Select a Task", font="calibri 20 bold")   
 
 def info():
     messagebox.showinfo("ToDo List", "This ToDo List App v1.0\nCreated by Tunao2den\nPython Project", icon="info")
